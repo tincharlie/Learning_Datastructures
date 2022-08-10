@@ -22,7 +22,7 @@ For example:
 If we have 3 node, one node is connected to 2nd node and 2nd node is connected to 3rd node so here it store some reference of previous node.
 
    [D1| ]-->[D2| ]-->[D3| ]
-[head      contains ref    tail]
+[head---->contains ref---->tail]
     [N1       N2       N3]
 
 Ref of Node2 is store in Node1
