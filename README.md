@@ -22,8 +22,8 @@ For example:
 If we have 3 node, one node is connected to 2nd node and 2nd node is connected to 3rd node so here it store some reference of previous node.
 
    [D1| ]-->[D2| ]-->[D3| ]
-head      contains ref    tail
-    N1       N2       N3
+[head      contains ref    tail]
+    [N1       N2       N3]
 
 Ref of Node2 is store in Node1
 Ref of Node3 is store in Node2
@@ -40,8 +40,8 @@ End Node is called tail
 **Chain of node contain reference of next node**
 
      [17|5015]-->[36|5025 ]-->[50|5035]-->[80|None ]
-head    5010        5015        5025        5035    tail
-         N1          N2          N3          N4
+[head    5010        5015        5025        5035    tail]
+     [    N1          N2          N3          N4]
 5015 nothing but a reference of next node.
 
 
@@ -49,8 +49,8 @@ head    5010        5015        5025        5035    tail
 **Contains two reference in the chain of node.**
 
      [ None | 17 | 5015]<-->[ 5010 | 36 | 5025 ]<-->[ 5015 | 50 | 5035 ]<-->[ 5025 | 80 | None ]
-head        5010                   5015                     5025                    5035    tail
-         N1                         N2                       N3                      N4
+[head        5010                   5015                     5025                    5035    tail]
+         [N1                         N2                       N3                      N4]
 5015 nothing but a reference of next node.
 Here you can see the left ref and right ref.
 
@@ -58,13 +58,13 @@ Here you can see the left ref and right ref.
 
 Circular Singly
      [17|5015]-->[36|5025 ]-->[50|5035]-->[80|5010 ]
-head    5010        5015        5025        5035    tail
-         N1          N2          N3          N4
+[head    5010        5015        5025        5035    tail]
+         [N1          N2          N3          N4]
 Here 5010 ref is in the last node so thats why its an circular list
 
 Circular Doubly
      [ 5035 | 17 | 5015]<-->[ 5010 | 36 | 5025 ]<-->[ 5015 | 50 | 5035 ]<-->[ 5025 | 80 | 5010 ]
-head        5010                   5015                     5025                    5035    tail
-         N1                         N2                       N3                      N4
+[head        5010                   5015                     5025                    5035    tail]
+         [N1                         N2                       N3                      N4]
 
 Here you can see right ref of 1st node is 5035 connect to last node ref. and right ref of last node is 5010 is the first node ref.
